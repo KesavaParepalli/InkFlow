@@ -7,4 +7,5 @@ import com.blogapp.blogapp.dtos.CommentDto;
 public interface CommentService {
     CommentDto createComment(CommentDto dto);
     List<CommentDto> getCommentsByPost(Long postId);
+    void deleteComment(Long id);
 }

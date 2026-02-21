@@ -137,6 +137,10 @@ public class PostServiceImpl implements PostService {
                     cd.setId(c.getId());
                     cd.setContent(c.getContent());
                     cd.setPostId(p.getId());
+                    if (c.getUser() != null) {
+                        cd.setUserId(c.getUser().getId());
+                        cd.setUserName(c.getUser().getName());
+                    }
                     return cd;
                 }).collect(Collectors.toList());
 
