@@ -27,8 +27,8 @@ services:
         condition: service_healthy
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/blog_app
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: 1985
+      SPRING_DATASOURCE_USERNAME: ${your_username}
+      SPRING_DATASOURCE_PASSWORD: ${your_password}
     ports:
       - "8080:8080"
 
